@@ -1,0 +1,247 @@
+/* entire webpage style */
+html {
+    font-family: "Cinzel", "Cormorant SC", "Arial", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    font-size: 1.5vw;
+}
+button{
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+}
+input{
+    width: 100%;
+}
+/* nav bar */
+nav {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+}
+/* texts */
+h1{
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+h2{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+/* account info page */
+#account {
+    width: 80%;
+    padding: 3%;
+    margin: 0% 10%;
+    .firstname{
+        display: flex;
+        white-space: pre;
+    }
+    .surname{
+        display: flex;
+        white-space: pre;
+    }
+    .email{
+        display: flex;
+        white-space: pre;
+    }
+}
+/* product page */
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 3%;
+    img{
+        display: block;
+        width: 100%;
+    }
+    .pictures{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 5%;
+    }
+    .extra{
+        width: 45%;
+        margin: 2.5%;
+        display: flex;
+        img{
+            padding: 2.5%;
+        }
+    }
+}
+.productsection{
+    display: flex;
+}
+.productdesc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    flex-direction: column;
+    h1 {
+        text-align: start;
+    }
+    button{
+        width: 80%;
+    }
+}
+.commentbox{
+    background-color: black;
+    color: white;
+    margin: 2% 10% 2% 10%;
+    padding: 1% 0%;
+    .comment{
+        text-align: center;
+        background-color: white;
+        color: black;
+        padding: 0.5%;
+        margin: 3%;
+        text-align: start;
+    }
+}
+/* login/ sign up page */
+.login{
+    display: inline-block;
+    width: 30%;
+    text-align: start;
+    color: black;
+    background-color: white;
+    padding: 3%;
+    flex-flow: column;
+    margin: 5%;
+    float: right;
+    a{
+        color: black;
+        font-size: 0.5em;
+    }
+    p{
+        text-align: center;
+    }
+    form{
+        text-align: center;
+        button{
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin-top: 10%;
+            cursor: pointer;
+        }
+        label{
+            display: flex;
+        }
+        input{
+            border: none;
+            border-bottom: 1px black solid;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+    }
+}
+.homelogo{
+    max-width: 50%;
+    display: inline-block;
+    margin: 3% 7.5%;
+}
+.loginpage{
+    display: flex;
+}
+/* about us page */
+.info{
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+    display: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+    img{
+        display: block;
+        width: 100%;
+    }
+    p{
+        font-size: 1.5em;
+    }
+}
+/* home page */
+.featured{
+    margin: 0% 1%;
+    display: flex;
+    width: 99%;
+    img{
+        padding: 2.5%;
+        width: 45%;
+    }
+}
+.others{
+    margin: 0% 1%;
+    display: flex;
+    width: 99%;
+    flex-wrap: wrap;
+    img{
+        padding: 2.5%;
+        width: 45%;
+    }
+}
+/* payment details page */
+.payment{
+    width: 80%;
+    text-align: start;
+    color: black;
+    background-color: white;
+    padding: 3%;
+    flex-flow: column;
+    margin: 0% 7%;
+    form{
+        text-align: center;
+        button{
+            margin-top: 10%;
+            width: 75%;
+        }
+        label{
+            display: flex;
+        }
+        input{
+            margin-bottom: 5%;
+        }
+        select{
+            width: 100%;
+            margin-bottom: 5%
+        }
+    }
+}
+/* purchases page */
+.boughtproducts{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .iteminfo{
+        width: 100%;
+    }
+    .item{
+        width: 20%;
+        padding: 0% 2.5%;
+    }
+}
