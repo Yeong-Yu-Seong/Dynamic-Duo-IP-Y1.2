@@ -1,0 +1,414 @@
+/* entire webpage style */
+html {
+    font-family: "Cinzel", "Cormorant SC", "Arial", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    font-size: 1.5vw;
+}
+button,img{
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+}
+input{
+    width: 100%;
+}
+.logo{
+    width: 10%;
+    padding: 0%;
+    margin: auto 12%;
+    cursor: default;
+}
+/* nav bar */
+nav {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    img{
+        margin: auto 1%;
+        width: 4em;
+        height: 4em;
+        padding: 2%;
+    }
+    .search{
+        width: 3em;
+        height: 3em;
+        padding: 2% 0%;
+    }
+    input{
+        position: relative;
+        width: 20%;
+        height: 10%;
+        border: 1px solid black;
+        top: 11.5%;
+        right: 25%;
+    }
+}
+.nav2 {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid white;
+    a{
+        width: 25%;
+        padding: 0%;
+    }
+}
+#searchbar {
+    width: 50%;
+    float: right;
+    height: 2em;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+    margin: 2% 0%;
+    text-align: center;
+}
+/* texts */
+h1{
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    padding: 2%;
+}
+h2{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+/* account info page */
+#account {
+    width: 80%;
+    padding: 3%;
+    display: flex;
+    text-align-last: right;
+    .username{
+        display: flex;
+        white-space: pre;
+    }
+    .name{
+        display: flex;
+        white-space: pre;
+    }
+    .email{
+        display: flex;
+        white-space: pre;
+    }
+    .accountdata{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    button{
+        text-align: center;
+    }
+    .profile{
+        width: 35%;
+        margin: auto;
+        padding: 0% 5%;
+        img{
+            width: 20em;
+            height: 20em;
+            object-fit: cover;
+            margin: auto;
+            cursor: default;
+        }
+    }
+    p{
+        float: left;
+        display: block;
+    }
+    input{
+        text-align-last: center;
+    }
+    #file-input {
+        display: none;
+      }
+      #file-input-label {
+        border: 1px solid black;
+        cursor: pointer;
+        padding: 3%;
+      }
+}
+.logout{
+    text-align: center;
+    margin: 2% auto;
+    display: block;
+}
+/* product page */
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 3%;
+    img{
+        display: block;
+        width: 100%;
+        padding: 0%;
+        cursor: default;
+    }
+    .pictures{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 5%;
+    }
+    .extra{
+        width: 45%;
+        margin: 2.5%;
+        display: flex;
+        img{
+            padding: 2.5%;
+        }
+    }
+}
+.productsection{
+    display: flex;
+}
+.productdesc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    flex-direction: column;
+    margin-right: 5%;
+    h1 {
+        text-align: start;
+    }
+    button{
+        width: 80%;
+    }
+}
+.commentbox{
+    background-color: white;
+    color: black;
+    margin: 2% 10% 2% 5%;
+    padding: 1% 0%;
+    .comment{
+        text-align: center;
+        background-color: white;
+        color: black;
+        padding: 0.5%;
+        margin: 3%;
+        text-align: start;
+    }
+    #star{
+        width: 10%;
+        padding: 0%;
+        cursor: default;
+    }
+    .person{
+        padding: 0%;
+    }
+}
+/* login/ sign up page */
+.login{
+    display: inline-block;
+    width: 30%;
+    text-align: start;
+    color: black;
+    background-color: white;
+    padding: 3%;
+    flex-flow: column;
+    margin: 5%;
+    float: right;
+    a{
+        color: black;
+        font-size: 0.5em;
+    }
+    p{
+        text-align: center;
+    }
+    form{
+        text-align: center;
+        button{
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin-top: 10%;
+            cursor: pointer;
+        }
+        label{
+            display: flex;
+        }
+        input{
+            border: none;
+            border-bottom: 1px black solid;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+    }
+}
+.homelogo{
+    max-width: 50%;
+    display: inline-block;
+    margin: 3% 7.5%;
+    margin: auto;
+    cursor:default;
+}
+.loginpage{
+    display: flex;
+}
+/* about us page */
+.info{
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+    display: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+    img{
+        display: block;
+        width: 100%;
+        padding: 0%;
+    }
+    p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+/* home page */
+.featured{
+    display: flex;
+    width: 100%;
+    img{
+        padding: 2.5%;
+        width: 45%;
+        height: 45%;
+    }
+}
+.others{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    img{
+        padding: 2.5%;
+        width: 45%;
+        height: 45%;
+    }
+}
+/* payment details page */
+#itemname{
+    width: 80%;
+    text-align: start;
+    color: black;
+    background-color: white;
+    padding: 0%;
+    flex-flow: column;
+    margin: auto;
+}
+.payment{
+    width: 80%;
+    text-align: start;
+    color: black;
+    background-color: white;
+    padding: 3%;
+    flex-flow: column;
+    margin: 0% 7%;
+    form{
+        text-align: center;
+        button{
+            margin-top: 2.5%;
+            width: 75%;
+        }
+        label{
+            display: flex;
+        }
+        input{
+            margin-bottom: 5%;
+        }
+        select{
+            width: 100%;
+            margin-bottom: 5%
+        }
+        [type="radio"]{
+            width: 10%;
+            margin: 3% 0%;
+        }
+        .credit_card, .paynow, .paylah{
+            display: flex;
+            border: 1px solid black;
+            label{
+                margin: 3% 0%;
+            }
+        }
+        #cardoption{
+            margin-top: 5%;
+        }
+        p{
+            text-align: left;
+        }
+    }
+}
+.paymentitem{
+    display: flex;
+    margin: 0% 10%;
+    img{
+        width: 10%;
+        padding: 0%;
+    }
+}
+.cost{
+    display: flex;
+    #cost{
+        white-space: pre;
+        margin-left: 1%;
+    }
+}
+/* purchases page */
+.boughtproducts{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    img{
+        width: 100%;
+        height: auto;
+        padding: 0%;
+    }
+    .iteminfo{
+        width: 100%;
+    }
+    .item{
+        width: 20%;
+        padding: 0% 2.5%;
+    }
+}
+/* purchase going through */
+.loading{
+    text-align: center;
+    margin: 25% 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p{
+        font-size: 3vh;
+    }
+}
+/* successful purchase page */
+.details{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    button{
+        margin-top: 5%;
+    }
+}

@@ -2,8 +2,8 @@
     <html lang = "en">
         <head>
             <meta charset="utf-8">
-            <link rel="stylesheet" href="normalize.css" type = "text/css">
-            <link rel="stylesheet" href="style.css" type="text/css">
+            <link rel="stylesheet" href="CSS/normalize.css" type = "text/css">
+            <link rel="stylesheet" href="CSS/style.css" type="text/css">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel&family=Cormorant+SC:wght@700&family=DynaPuff:wght@400..700&family=Lilita+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
             <title>Sign Up Page</title>
@@ -11,26 +11,41 @@
         <body>
             <!-- Change url after -->
             <div class="loginpage">
-                <img src="About Us.jpg" alt="Company Logo" class="homelogo">
+                <img src="Pictures/logo.png" alt="Company Logo" class="homelogo">
                 <div class="login">
                     <h1>Sign Up</h1>
-                    <form action="" method = "">
-                        <label for="email">Email:</label><br>
-                        <input type="email" name="email" id="email" required><br>
-                        <label for="password">Password:</label><br>
-                        <input type="password" name="password" id="password" required><br>
-                        <label for="password2">Confirm Password:</label><br>
-                        <input type="password2" name="password2" id="password2" required><br>
-                        <label for="firstname">First Name:</label>
-                        <input type="text" name="firstname" id="firstname" required><br>
-                        <label for="surname">Surname:</label>
-                        <input type="text" name="surname" id="surname" required><br>
+                    <form onsubmit="signupdata(event)">
+                        <div>
+                            <label>Username:</label><br>
+                            <input type="text" id="username" name="username" required><br>
+                        </div>
+                        <div>
+                            <label>Email:</label><br>
+                            <input type="email" id="email" name="email" required><br>
+                        </div>
+                        <div>
+                            <label>Password:</label><br>
+                            <input type="password" id="password" name="password" required><br>
+                        </div>
+                        <div>
+                            <label>Confirm Password:</label><br>
+                            <input type="password" id="password2" name="password2" required><br>
+                        </div>
+                        <div>
+                            <label>First Name:</label>
+                            <input type="text" id="firstname" name="firstname" required><br>
+                        </div>
+                        <div>
+                            <label>Surname:</label>
+                            <input type="text" id="surname" name="surname" required><br>
+                        </div>
                         <a href="index.html">Have an account? Log in here</a><br>
-                        <button>Sign Up</button>
+                        <input type="submit" value="Sign Up">
+                        <p style="display: none;" id="password_error">Please type the same password.</p>
                     </form>
                 </div>
             </div>
-            <!-- Script Used -->
-            <script></script>
         </body>
+        <!-- Script Used -->
+        <script src="signup.js" type="text/javascript"></script>
     </html>

@@ -2,35 +2,46 @@
     <html lang = "en">
         <head>
             <meta charset="utf-8">
-            <link rel="stylesheet" href="normalize.css" type = "text/css">
-            <link rel="stylesheet" href="style.css" type="text/css">
+            <link rel="stylesheet" href="CSS/normalize.css" type = "text/css">
+            <link rel="stylesheet" href="CSS/style.css" type="text/css">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel&family=Cormorant+SC:wght@700&family=DynaPuff:wght@400..700&family=Lilita+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
             <title>Home Page</title>
         </head>
         <body>
+            <!-- main navigation bar -->
             <nav>
-                <img src="" alt="Company Logo" class="logo">
+                <img src="Pictures/logo.png" alt="Company Logo" class="logo">
                 <a href="home.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="purchases.html">Purchases</a>
-                <img src="" alt="Search Bar" class ="search">
-                <a href="account.html"><img src="" alt="Account"></a>
+                <img src="Pictures/search.png" alt="Search Bar" class ="search" onclick="search()">
+                <img src="Pictures/profile.png" alt="Account" id="accountpic" onclick="window.location.href='account.html'">
             </nav>
-            <h1>Featured</h1>
-            <!-- Change url after -->
+            <!-- product navigation bar -->
+            <nav class="nav2">
+                <a href="home.html" style="text-decoration-line: underline;">All</a>
+                <a href="rings.html">Rings</a>
+                <a href="necklaces.html">Necklaces</a>
+                <a href="earrings.html">Earrings</a>
+            </nav>
+            <!-- somehow get this search function to work -->
+            <input type="text" id="searchbar" style="display: none;" value="">
+            <!-- product images -->
             <div class="featured">
-                <img src="About Us.jpg" alt=""> <!-- 3df item 1 -->
-                <img src="About Us.jpg" alt=""> <!-- 3df item 2 -->
+                <img id="1" onmouseover="getId(this)" class="product_image" src="Pictures/product1.png" alt="product 1" onclick="window.location.href='product.html'"> <!-- 3df item 1 -->
+                <img id="2" onmouseover="getId(this)" class="product_image" src="Pictures/product2.jpg" alt="product 2" onclick="window.location.href='product.html'"> <!-- 3df item 2 -->
             </div>
-            <h2>More Products</h2>
+            <h2>Best Selling Items</h2>
             <div class="others">
-                <img src="About Us.jpg" alt=""> <!-- product 1 -->
-                <img src="About Us.jpg" alt=""> <!-- product 2 -->
-                <img src="About Us.jpg" alt=""> <!-- product 3 -->
-                <img src="About Us.jpg" alt=""> <!-- product 4 -->
+                <img id="3" onmouseover="getId(this)" class="product_image" src="Pictures/product3.png" alt="product 3" onclick="window.location.href='product.html'"> <!-- product 1 -->
+                <img id="4" onmouseover="getId(this)" class="product_image" src="Pictures/product4.jpg" alt="product 4" onclick="window.location.href='product.html'"> <!-- product 2 -->
+                <img id="5" onmouseover="getId(this)" class="product_image" src="Pictures/product5.jpg" alt="product 5" onclick="window.location.href='product.html'"> <!-- product 3 -->
+                <img id="6" onmouseover="getId(this)" class="product_image" src="Pictures/product6.png" alt="product 6" onclick="window.location.href='product.html'"> <!-- product 4 -->
+                <img id="7" onmouseover="getId(this)" class="product_image" src="Pictures/product7.png" alt="product 7" onclick="window.location.href='product.html'"> <!-- product 5 -->
+                <img id="8" onmouseover="getId(this)" class="product_image" src="Pictures/product8.jpg" alt="product 8" onclick="window.location.href='product.html'"> <!-- product 6 -->
             </div>
             <!-- Script Used -->
-            <script></script>
+            <script src="Scripts/home.js" type="text/javascript"></script>
         </body>
     </html>

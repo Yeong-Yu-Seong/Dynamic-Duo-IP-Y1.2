@@ -2,47 +2,60 @@
     <html lang = "en">
         <head>
             <meta charset="utf-8">
-            <link rel="stylesheet" href="normalize.css" type = "text/css">
-            <link rel="stylesheet" href="style.css" type="text/css">
+            <link rel="stylesheet" href="CSS/normalize.css" type = "text/css">
+            <link rel="stylesheet" href="CSS/style.css" type="text/css">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel&family=Cormorant+SC:wght@700&family=DynaPuff:wght@400..700&family=Lilita+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
             <title>Product Page</title>
         </head>
         <body>
+            <!-- main bavigation bar -->
             <nav>
-                <img src="" alt="Company Logo" class="logo">
+                <img src="Pictures/logo.png" alt="Company Logo" class="logo">
                 <a href="home.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="purchases.html">Purchases</a>
-                <img src="" alt="Search Bar" class ="search">
-                <a href="account.html"><img src="" alt="Account"></a>
+                <img src="Picturessearch.png" alt="Search Bar" class ="search" onclick="search()">
+                <img src="Pictures/profile.png" alt="Account" id="accountpic" onclick="window.location.href='account.html'">
             </nav>
-            <button class="back">Go Back</button>
+            <!-- somehow get this search function to work -->
+            <input type="text" id="searchbar" style="display: none;" value="">           
+            <button class="back" onclick="window.location.href='home.html'">Go Back</button>
             <div class="productsection">
                 <div class="product">
-                    <!-- Change url later -->
+                    <!-- product images -->
                      <div class="pictures">
-                        <img src="About Us.jpg" alt=""> <!-- Item Image -->
+                        <img id="product_image" src="" alt="product"> <!-- Item Image -->
                         <div class="extra">
-                            <img src="About Us.jpg" alt=""> <!-- Item Image -->
-                            <img src="About Us.jpg" alt=""> <!-- Vid Image (need to somehow show the vid when clicked) -->
+                            <img id="product_image2" src="" alt="product"> <!-- Item Image -->
+                            <img id="product_image3" src="" alt="video link/ product" onclick="videolink()"> <!-- Vid Image (need to somehow show the vid when clicked) -->
                         </div>
                      </div>
                 </div>
+                <!-- product description -->
                 <div class="productdesc">
-                    <h1>Product Name</h1>
-                    <p>Product description</p>
-                    <button>Buy</button>
+                    <h1 id="productname">Product Name</h1>
+                    <p id="desc">Product description</p>
+                    <div class="cost">
+                        <p>Cost: </p>
+                        <p id="cost">text</p>
+                    </div>
+                    <button onclick="window.location.href='purchasing.html'">Buy</button>
                 </div>
             </div>
+            <!-- review section -->
             <div class="commentbox">
                 <h2>Reviews</h2>
+                <!-- add stars/rating -->
                 <div class="comment">
-                    <p>text</p>
+                    <img class="person" src="Pictures/person.png" alt="person">
+                    <img id="star" src="Pictures/star.png" alt="rating">
+                    <p>Perfect pair of earrings!</p>
                     <!-- Somehow Add Comment -->
                 </div>
             </div>
-            <!-- Script Used -->
-            <script></script>
         </body>
+        <!-- Script Used -->
+        <script type="text/javascript" src="Scripts/home.js"></script>
+        <script type="text/javascript" src="Scripts/product.js"></script>
     </html>

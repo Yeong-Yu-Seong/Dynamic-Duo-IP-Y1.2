@@ -2,41 +2,69 @@
     <html lang = "en">
         <head>
             <meta charset="utf-8">
-            <link rel="stylesheet" href="normalize.css" type = "text/css">
-            <link rel="stylesheet" href="style.css" type="text/css">
+            <link rel="stylesheet" href="CSS/normalize.css" type = "text/css">
+            <link rel="stylesheet" href="CSS/style.css" type="text/css">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel&family=Cormorant+SC:wght@700&family=DynaPuff:wght@400..700&family=Lilita+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
             <title>Purchasing Page</title>
         </head>
         <body>
+            <!-- main bavigation bar -->
             <nav>
-                <img src="" alt="Company Logo" class="logo">
+                <img src="Pictures/logo.png" alt="Company Logo" class="logo">
                 <a href="home.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="purchases.html">Purchases</a>
-                <img src="" alt="Search Bar" class ="search">
-                <a href="account.html"><img src="" alt="Account"></a>
+                <img src="Pictures/search.png" alt="Search Bar" class ="search" onclick="search()">
+                <img src="Pictures/profile.png" alt="Account" id="accountpic" onclick="window.location.href='account.html'">
             </nav>
-            <button class="back">Go Back</button>
+            <!-- somehow get this search function to work -->
+            <input type="text" id="searchbar" style="display: none;" value="">
+            <button class="back" onclick="window.location.href='product.html'">Go Back</button>
+            <!-- getting payment details -->
             <h1>Payment Details</h1>
+            <div class="paymentitem">
+                <img id="product_image" src="" alt="product image">
+                <h2 id="itemname">Item Name</h2>
+            </div>
             <div class="payment">
-                <form action="" method = "">
+                <form id="paymentdetails" onsubmit="paymentdata(event)" name="paymentdetails">
                     <label for="address">Address:</label><br>
-                    <input type="address" name="address" id="address" required><br>
-                    <label for="paymentmode">Payment Mode:</label><br>
-                    <select name="paymentmode" id="paymentmode" required><br>
-                        <option value="cash">Cash - Pay on delivery</option>
-                        <option value="card">Card</option>
-                    </select>
-                    <!-- Somehow make this choice only appear when click -->
-                    <label for="text">Card Number:</label><br>
-                    <input type="text" name="number" id="number" required><br>
-                    <label for="text">CV:</label><br>
-                    <input type="text" name="cv" id="cv" required><br>
-                    <button>Buy</button>
+                    <input type="address" name="address" id="address" placeholder="Enter your address" onkeyup="checkform()" required><br>
+                    <input type="text" name="postal" id="postal" placeholder="Enter your postal code" onkeyup="checkform()" required><br>
+                    <p>Payment Mode:</label></p>
+                    <div id="paymentmode">
+                        <div class="credit_card">
+                            <input type="radio" id="credit_card" name="pay" value="card" onclick=enableText()>
+                            <label for="pay">Credit card (DBS/VISA/NETS)</label>
+                        </div>
+                        <div class="paynow">
+                            <input type="radio" id="paynow" name="pay" value="paynow" onclick=disableText()>
+                            <label for="pay">PAYNOW</label>
+                        </div>
+                        <div class="paylah">
+                            <input type="radio" id="paylah" name="pay" value="paylah" onclick=enableText()>
+                            <label for="pay">PAYLAH</label>
+                        </div>
+                    </div>
+                    <div id="qr" style="display: none;">
+                        <img src="" alt="paynow_qr">
+                    </div>
+                    <div id="cardoption" style="display: none">
+                        <label for="text">Card Number:</label><br>
+                        <input type="text" name="number" id="number" placeholder="Enter card number" disable="disabled" required><br>
+                        <label for="text">CV:</label><br>
+                        <input type="text" name="cv" id="cv" placeholder="Enter cv number" disabled="disabled" required><br>
+                    </div>
+                    <div class="cost">
+                        <p>Cost: </p>
+                        <p id="cost">text</p>
+                    </div>
+                    <button type="submit" disabled>Pay</button>
                 </form>
             </div>
-            <!-- Script Used -->
-            <script></script>
         </body>
+        <!-- Script Used -->
+        <script type="text/javascript" src="Scripts/purchasing.js"></script>
+        <script type="text/javascript" src="Scripts/home.js"></script>
     </html>
