@@ -1,8 +1,9 @@
 # Ocean's Gold
+[GitHub Page](https://github.com/Yeong-Yu-Seong/Dynamic-Duo-IP-Y1.2)
 
 Ocean’s Gold is a luxurious e-commerce platform designed for jewelry enthusiasts. Inspired by the elegance of gold and the beauty of the ocean, this app provides a seamless, elegant, and visually appealing shopping experience for customers looking for high-quality, timeless jewelry pieces. The app combines aesthetic beauty with functionality, ensuring an intuitive browsing and purchasing experience for users.
 
-Additionally, the app incorporates Time-Limited Shopping Battles, an engaging gamification feature where users compete in real-time to claim exclusive discounts and rewards, making shopping more interactive and exciting.
+Additionally, the app wants to incorporate Time-Limited Shopping Battles, an engaging gamification feature where users compete in real-time to claim exclusive discounts and rewards, making shopping more interactive and exciting.
 
  
 ## Design Process
@@ -42,8 +43,6 @@ Navigation: Simple categories (Rings, Necklaces, Earrings) and a clear menu layo
 📌 Wireframes & Mockups: Included in Figma folder.
 
 ## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
 ### Existing Features
 
@@ -55,38 +54,41 @@ High-Quality Product Displays – Clear images and detailed descriptions enhance
 
 Seamless Checkout – A simple step-by-step purchase process.
 
-Personalized Account Section – Users can track orders, manage rewards, and view recommendations.
-
-Time-Limited Shopping Battles – A gamified experience where users compete in real-time shopping battles to win exclusive deals.
-
 ### Features Left to Implement
+
 AI-Powered Recommendations – Suggests products based on user preferences.
 
 Augmented Reality (AR) Try-On – Allows users to virtually try on jewelry before purchasing.
 
 Leaderboard System for Shopping Battles – Tracks top players and rewards consistent winners.
 
+Cart System - Allow users to add items they want to purchase.
+
+Purchases System - Allows users to see their purchase history and status of the items.
+
+Time-limited battles - A gamification system to allow users to get vouchers and benefits.
 
 ## Technologies Used
 
-Figma – Used to create wireframes and mockups.
+[Square photo](https://squareanimage.com/#google_vignette) - Used to make rectangular images into a square.
 
-Substance Painter – Used for creating textures in the logo design.
+[removebg](https://www.remove.bg/upload) - Used to remove background of images.
 
-JQuery – Simplifies DOM manipulation.
+[Figma](https://www.figma.com) – Used to create wireframes and mockups.
 
-Pinterest – Used to source aesthetic inspiration for the product display images.
+[Pinterest](https://www.pinterest.com/) – Used to source aesthetic inspiration for the product display images.
+
+[Stackoverflow](https://stackoverflow.com/questions) - Used to get javascript codes
+
+[W3Schools](https://www.w3schools.com/) - Used to get reference for css
+
+[Chaptgpt](https://www.chatgpt.com) - Used to get API codes
 
 ## Assistive AI
-
-Logo Design: ChatGPT provided recommendations for logo improvements and color refinements.
 
 Wireframe Adjustments: ChatGPT assisted in refining the structure of the user interface based on best practices.
 
 Typography Selection: AI tools helped in choosing font pairings for optimal readability and aesthetics.
-
-Shopping Battle Mechanics: ChatGPT suggested engagement techniques and reward loops based on player types.
-
 
 ## Testing
 
@@ -102,23 +104,46 @@ Shopping Battle Test: Evaluated the fairness of the competition, reward distribu
 
 ### Bug Fixes
 
-Fixed an issue where the ‘Add to Cart’ button was not displaying properly on certain screen resolutions.
-
 Improved loading times for product images to enhance the user experience.
 
-Adjusted the countdown timer synchronization for Time-Limited Shopping Battles to ensure fair gameplay.
+## Individual Contributions
+1. Mo Xuan'en Shannon
+   - Design the layout of the website
+   - Provided images of all the jewelries
+   - Provided feedbacks on what can be improved
+   - Chose the typography
+   - Typed out this README file
 
-
+2. Yeong Yu Seong
+   - Design the layout of the website
+   - Main developer of the website
+   - Programmed the html, css and javascript
+   - Implemented API
+   - Tested the website
 ## Credits
 
 ### Content
-Content & Images
+#### Content & Images
 
 Product images sourced from Pinterest.
 
 Fonts inspired by modern retail apps like Zara.
 
-Game Mechanics Inspiration
+Images sourced from google:
+
+1. Jawad Ali. (n.d.). User icon on transparent background Free PNG. ![User icon on transparent background.](https://www.vecteezy.com/png/19879186-user-icon-on-transparent-background)
+2. pngall. (n.d.). Search Button White PNG. ![White search icon.](https://www.pngall.com/search-button-png/download/112223/#google_vignette)
+3. Fanny Salstein. (2022, June 16). Star icon. Vector yellow isolated five stars. Customer feedback concept. Vector 5 stars rating review. Quality shape design. EPS 10. ![5 Star icon.](https://www.customerparadigm.com/star-icon-vector-yellow-isolated-five-stars-customer-feedback-concept-vector-5-stars-rating-review-quality-shape-design-eps-10/)
+
+Javascript codes:
+
+1. https://stackoverflow.com/questions/70347614/adding-div-container-with-class-name-and-html-content-with-javascript
+2. https://chatgpt.com/share/67a70de4-c618-800d-bf1d-f86864d5f28c (most of the codes I used for API was from here)
+3. Chatgpt images ![Image 1](AIAssistance\Screenshot 2025-02-07 193026.png) ![Image 2](AIAssistance\Screenshot 2025-02-07 193038.png)
+
+#### Game Mechanics Inspiration
+
+[**Yet to be implemented**]
 
 Live Shopping Competitions – Inspired by real-time gaming experiences.
 

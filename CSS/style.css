@@ -126,6 +126,11 @@ h2{
             margin: auto;
             cursor: default;
         }
+        #profilePicButton{
+            border: 1px solid black;
+            cursor: pointer;
+            padding: 3%;
+        }
     }
     p{
         float: left;
@@ -134,19 +139,15 @@ h2{
     input{
         text-align-last: center;
     }
-    #file-input {
-        display: none;
-      }
-      #file-input-label {
-        border: 1px solid black;
-        cursor: pointer;
-        padding: 3%;
-      }
 }
 .logout{
     text-align: center;
     margin: 2% auto;
     display: block;
+}
+.saving{
+    color: red;
+    margin: 0% 10%;
 }
 /* product page */
 .product{
@@ -264,6 +265,20 @@ h2{
 .loginpage{
     display: flex;
 }
+#username_error{
+    font-size: 0.8em;
+    color: red;
+}
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+.message {
+    font-size: 0.8em;
+}
 /* about us page */
 .info{
     width: 80%;
@@ -370,7 +385,7 @@ h2{
     }
 }
 /* purchases page */
-.boughtproducts{
+#boughtproducts{
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
@@ -380,6 +395,7 @@ h2{
         width: 100%;
         height: auto;
         padding: 0%;
+        cursor: default;
     }
     .iteminfo{
         width: 100%;

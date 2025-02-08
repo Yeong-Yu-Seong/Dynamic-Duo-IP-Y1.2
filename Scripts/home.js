@@ -20,3 +20,4 @@ function getId(element) {
     console.log('Hovered ID:', element.id);
     localStorage.setItem("product image", element.id)
 }
+document.getElementById("accountpic").src = localStorage.getItem("accountpicture")

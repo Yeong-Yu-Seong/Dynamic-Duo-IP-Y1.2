@@ -23,32 +23,32 @@
             <h1>Account</h1>
             <div id="account">
                 <div class="profile">
-                    <img id="profile_picture" src="Pictures/profile.png" alt="profile picture">
-                    <input type="file" id="file-input" name="file-input" />
-                    <label id="file-input-label" for="file-input">Change Profile Picture</label>
+                    <img id="profile_picture" src="" alt="profile picture">
+                    <input type="file" id="updateProfilePic" accept="image/*" style="display:none">
+                    <button id="profilePicButton">Change Profile Picture</button>
                 </div>
                 <div class="accountdata">
                     <div class="username">
                         <p>Username:</p>
-                        <p id="user_name"> text</p>
+                        <p id="user_name"> text</p> <!-- Get user username -->
                     </div>
                     <div class="followers">
-                        <p>0 Followers 0 Following</p>
+                        <p>0 Followers 0 Following</p> <!-- Have not add followers and following function hence it is set at 0 each -->
                     </div>
                     <div class="name">
                         <p>Name:</p>
-                        <p id="account_name"> text</p>
+                        <p id="account_name"> text</p> <!-- Set user name -->
                     </div>
                     <div class="email">
                         <p>Email:</p>
-                        <p id="account_email"> text</p>
+                        <p id="account_email"> text</p> <!-- Set user email -->
                     </div>
                 </div>
             </div>
-            <button class='logout' onclick="window.location.href='index.html'">Log Out</button>
+            <p class="saving">Please wait at least 5 seconds if you are changing your profile picture to allow us to save the image.</p>
+            <button class='logout' onclick="logout()">Log Out</button>
             <!-- Script Used -->
             <script type="text/javascript" src="Scripts/account.js"></script>
-            <script type="text/javascript" src="Scripts/signup.js"></script>
             <script type="text/javascript" src="Scripts/home.js"></script>
         </body>
     </html>

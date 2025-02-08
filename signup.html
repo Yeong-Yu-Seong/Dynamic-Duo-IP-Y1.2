@@ -14,34 +14,35 @@
                 <img src="Pictures/logo.png" alt="Company Logo" class="homelogo">
                 <div class="login">
                     <h1>Sign Up</h1>
-                    <form onsubmit="signupdata(event)">
+                    <form onsubmit="addAccount(event)" name="signupdata" id="signupdata">
                         <div>
                             <label>Username:</label><br>
-                            <input type="text" id="username" name="username" required><br>
+                            <input type="text" id="username" name="username" placeholder="Enter a username" required><br>
                         </div>
+                        <p style="display: none;" id="username_error">Username taken. Please use another username.</p>
                         <div>
                             <label>Email:</label><br>
-                            <input type="email" id="email" name="email" required><br>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
                         </div>
                         <div>
                             <label>Password:</label><br>
-                            <input type="password" id="password" name="password" required><br>
+                            <input type="password" class="" id="password" name="password" placeholder="Enter a password" required><br>
                         </div>
                         <div>
                             <label>Confirm Password:</label><br>
-                            <input type="password" id="password2" name="password2" required><br>
+                            <input type="password" class="" id="password2" name="password2" placeholder="Retype the password" required onchange="validate()"><br>
                         </div>
+                        <p style="display: none;" id="password_error">Please type the same password.</p>
                         <div>
                             <label>First Name:</label>
-                            <input type="text" id="firstname" name="firstname" required><br>
+                            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required><br>
                         </div>
                         <div>
                             <label>Surname:</label>
-                            <input type="text" id="surname" name="surname" required><br>
+                            <input type="text" id="surname" name="surname" placeholder="Enter your surname" required><br>
                         </div>
                         <a href="index.html">Have an account? Log in here</a><br>
-                        <input type="submit" value="Sign Up">
-                        <p style="display: none;" id="password_error">Please type the same password.</p>
+                        <button type="submit" id="signup" disabled>Sign Up</button>
                     </form>
                 </div>
             </div>

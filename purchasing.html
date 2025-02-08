@@ -28,7 +28,7 @@
                 <h2 id="itemname">Item Name</h2>
             </div>
             <div class="payment">
-                <form id="paymentdetails" onsubmit="paymentdata(event)" name="paymentdetails">
+                <form id="paymentdetails" onsubmit="addData(event)" name="paymentdetails">
                     <label for="address">Address:</label><br>
                     <input type="address" name="address" id="address" placeholder="Enter your address" onkeyup="checkform()" required><br>
                     <input type="text" name="postal" id="postal" placeholder="Enter your postal code" onkeyup="checkform()" required><br>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div id="qr" style="display: none;">
-                        <img src="" alt="paynow_qr">
+                        <img src="Pictures/qrcode.png" alt="paynow_qr">
                     </div>
                     <div id="cardoption" style="display: none">
                         <label for="text">Card Number:</label><br>
@@ -60,11 +60,11 @@
                         <p>Cost: </p>
                         <p id="cost">text</p>
                     </div>
-                    <button type="submit" disabled>Pay</button>
+                    <button type="submit" id="submit" disabled>Pay</button>
                 </form>
             </div>
         </body>
         <!-- Script Used -->
-        <script type="text/javascript" src="Scripts/purchasing.js"></script>
+        <script type="text/javascript" src="purchasing.js"></script>
         <script type="text/javascript" src="Scripts/home.js"></script>
     </html>
