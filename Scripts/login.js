@@ -25,17 +25,20 @@ function checkCredentials(event) {
     const user = data.find(user => user.email === emailInput && user.password === passwordInput);
 
     if (user) {
+      // correct login information
       document.getElementById("email").style.borderBottomColor = 'black'
       document.getElementById("password").style.borderBottomColor = 'black'
       window.location.href="home.html";
       messageDiv.textContent = "Login Successful!";
       messageDiv.className = "message success";
+      //set local storage items to be used later
       localStorage.setItem("username", user.username)
       localStorage.setItem("name", user.user_name)
       localStorage.setItem("email", user.email)
       localStorage.setItem("accountpicture", user.profilePic)
 
     } else {
+      // incorrect login information
       document.getElementById("email").style.borderBottomColor = 'red'
       document.getElementById("password").style.borderBottomColor = 'red'
       messageDiv.textContent = "Invalid email or password.";

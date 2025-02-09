@@ -10,7 +10,7 @@
         </head>
         <body>
             <!-- main bavigation bar -->
-            <nav>
+            <nav class="nav1">
                 <img src="Pictures/logo.png" alt="Company Logo" class="logo">
                 <a href="home.html">Home</a>
                 <a href="about.html">About Us</a>
@@ -18,42 +18,42 @@
                 <img src="Pictures/search.png" alt="Search Bar" class ="search" onclick="search()">
                 <img src="Pictures/profile.png" alt="Account" id="accountpic" onclick="window.location.href='account.html'">
             </nav>
-            <!-- somehow get this search function to work -->
+            <!-- search function not yet implemented -->
             <input type="text" id="searchbar" style="display: none;" value="">
             <button class="back" onclick="window.location.href='product.html'">Go Back</button>
             <!-- getting payment details -->
             <h1>Payment Details</h1>
             <div class="paymentitem">
-                <img id="product_image" src="" alt="product image">
+                <img id="product_image" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="product image">
                 <h2 id="itemname">Item Name</h2>
             </div>
             <div class="payment">
                 <form id="paymentdetails" onsubmit="addData(event)" name="paymentdetails">
                     <label for="address">Address:</label><br>
-                    <input type="address" name="address" id="address" placeholder="Enter your address" onkeyup="checkform()" required><br>
+                    <input type="text" name="address" id="address" placeholder="Enter your address" onkeyup="checkform()" required><br>
                     <input type="text" name="postal" id="postal" placeholder="Enter your postal code" onkeyup="checkform()" required><br>
-                    <p>Payment Mode:</label></p>
+                    <p>Payment Mode:</p>
                     <div id="paymentmode">
                         <div class="credit_card">
                             <input type="radio" id="credit_card" name="pay" value="card" onclick=enableText()>
-                            <label for="pay">Credit card (DBS/VISA/NETS)</label>
+                            <label for="credit_card">Credit card (DBS/VISA/NETS)</label>
                         </div>
                         <div class="paynow">
                             <input type="radio" id="paynow" name="pay" value="paynow" onclick=disableText()>
-                            <label for="pay">PAYNOW</label>
+                            <label for="paynow">PAYNOW</label>
                         </div>
                         <div class="paylah">
                             <input type="radio" id="paylah" name="pay" value="paylah" onclick=enableText()>
-                            <label for="pay">PAYLAH</label>
+                            <label for="paylah">PAYLAH</label>
                         </div>
                     </div>
                     <div id="qr" style="display: none;">
                         <img src="Pictures/qrcode.png" alt="paynow_qr">
                     </div>
                     <div id="cardoption" style="display: none">
-                        <label for="text">Card Number:</label><br>
-                        <input type="text" name="number" id="number" placeholder="Enter card number" disable="disabled" required><br>
-                        <label for="text">CV:</label><br>
+                        <label for="number">Card Number:</label><br>
+                        <input type="text" name="number" id="number" placeholder="Enter card number" disabled="disabled" required><br>
+                        <label for="cv">CV:</label><br>
                         <input type="text" name="cv" id="cv" placeholder="Enter cv number" disabled="disabled" required><br>
                     </div>
                     <div class="cost">
@@ -63,8 +63,8 @@
                     <button type="submit" id="submit" disabled>Pay</button>
                 </form>
             </div>
+            <!-- Script Used -->
+            <script src="purchasing.js"></script>
+            <script src="Scripts/home.js"></script>            
         </body>
-        <!-- Script Used -->
-        <script type="text/javascript" src="purchasing.js"></script>
-        <script type="text/javascript" src="Scripts/home.js"></script>
     </html>

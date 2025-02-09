@@ -1,4 +1,4 @@
-//enable search feature (currently not working)
+//enable search textbox (search function currently not working)
 function search(){
     state = document.getElementById('searchbar').style.display;
     if (state == "block"){

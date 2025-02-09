@@ -10,7 +10,7 @@
         </head>
         <body>
             <!-- main bavigation bar -->
-            <nav>
+            <nav class="nav1">
                 <img src="Pictures/logo.png" alt="Company Logo" class="logo">
                 <a href="home.html">Home</a>
                 <a href="about.html">About Us</a>
@@ -18,17 +18,17 @@
                 <img src="Pictures/search.png" alt="Search Bar" class ="search" onclick="search()">
                 <img src="Pictures/profile.png" alt="Account" id="accountpic" onclick="window.location.href='account.html'">
             </nav>
-            <!-- somehow get this search function to work -->
+            <!-- search function not yet implemented -->
             <input type="text" id="searchbar" style="display: none;" value="">
             <h1>Account</h1>
             <div id="account">
                 <div class="profile">
-                    <img id="profile_picture" src="" alt="profile picture">
+                    <img id="profile_picture" src="Pictures/profile.png" alt="profile picture">
                     <input type="file" id="updateProfilePic" accept="image/*" style="display:none">
                     <button id="profilePicButton">Change Profile Picture</button>
                 </div>
                 <div class="accountdata">
-                    <div class="username">
+                    <div id="username">
                         <p>Username:</p>
                         <p id="user_name"> text</p> <!-- Get user username -->
                     </div>
@@ -48,7 +48,7 @@
             <p class="saving">Please wait at least 5 seconds if you are changing your profile picture to allow us to save the image.</p>
             <button class='logout' onclick="logout()">Log Out</button>
             <!-- Script Used -->
-            <script type="text/javascript" src="Scripts/account.js"></script>
-            <script type="text/javascript" src="Scripts/home.js"></script>
+            <script src="Scripts/account.js"></script>
+            <script src="Scripts/home.js"></script>
         </body>
     </html>

@@ -10,7 +10,7 @@
         </head>
         <body>
             <!-- main bavigation bar -->
-            <nav>
+            <nav class="nav1">
                 <img src="Pictures/logo.png" alt="Company Logo" class="logo">
                 <a href="home.html">Home</a>
                 <a href="about.html">About Us</a>
@@ -18,17 +18,17 @@
                 <img src="Pictures/search.png" alt="Search Bar" class ="search" onclick="search()">
                 <img src="Pictures/profile.png" alt="Account" id="accountpic" onclick="window.location.href='account.html'">
             </nav>
-            <!-- somehow get this search function to work -->
+            <!-- search function not yet implemented -->
             <input type="text" id="searchbar" style="display: none;" value="">           
             <button class="back" onclick="window.location.href='home.html'">Go Back</button>
             <div class="productsection">
                 <div class="product">
                     <!-- product images -->
                      <div class="pictures">
-                        <img id="product_image" src="" alt="product"> <!-- Item Image -->
+                        <img id="product_image" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="product"> <!-- Item Image -->
                         <div class="extra">
-                            <img id="product_image2" src="" alt="product"> <!-- Item Image -->
-                            <img id="product_image3" src="" alt="video link/ product" onclick="videolink()"> <!-- Vid Image (need to somehow show the vid when clicked) -->
+                            <img id="product_image2" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="product"> <!-- Item Image -->
+                            <img id="product_image3" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="video link/ product" onclick="videolink()"> <!-- Vid Image (need to somehow show the vid when clicked) -->
                         </div>
                      </div>
                 </div>
@@ -47,15 +47,15 @@
             <div class="commentbox">
                 <h2>Reviews</h2>
                 <!-- add stars/rating -->
-                <div class="comment">
+                <div class="review">
                     <img class="person" src="Pictures/person.png" alt="person">
                     <img id="star" src="Pictures/star.png" alt="rating">
                     <p>Perfect pair of earrings!</p>
-                    <!-- Somehow Add Comment -->
+                    <!-- Comment feature meant to be implemented in the future -->
                 </div>
             </div>
+            <!-- Script Used -->
+            <script src="Scripts/home.js"></script>
+            <script src="Scripts/product.js"></script>
         </body>
-        <!-- Script Used -->
-        <script type="text/javascript" src="Scripts/home.js"></script>
-        <script type="text/javascript" src="Scripts/product.js"></script>
     </html>

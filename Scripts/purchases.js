@@ -21,6 +21,7 @@ const API_URL = 'https://database-2efb.restdb.io/rest/purchase-details';
             const boughtItemsDiv = document.getElementById("boughtproducts");
             boughtItemsDiv.innerHTML = ""; // Clear previous content
 
+            // update the purchases container items one by one
             if (data.length > 0) {
                 data.forEach(product => {
                     const productHTML = `
