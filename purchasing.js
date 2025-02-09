@@ -33,7 +33,7 @@ if (item_id == "1"){
 } else {
     console.log("error");
 }
-localStorage.setItem('item',item)
+localStorage.setItem('item',item);
 function addData(event){
     event.preventDefault();
     const url = "https://database-2efb.restdb.io/rest/purchase-details?max=2";
@@ -57,7 +57,7 @@ function addData(event){
             Item_Id: item_id,
             Item_Img: item_img,
             email: localStorage.getItem("email")
-        })
+        });
       } else {
         body = JSON.stringify({
             Address:address,
@@ -66,33 +66,19 @@ function addData(event){
             Item_Id: item_id,
             Item_Img: item_img,
             email: localStorage.getItem("email")
-    })};
+    });}
     fetch(url, {
         method: "POST",
         headers: headers,
         body: body
       })
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => console.log(data));
       setTimeout(function() {
         console.log('setting window location');
         window.location.href = "loading.html";
       }, 3000);
 }
-//getting payment details (pre-api)
-/*function paymentdata(event){
-    event.preventDefault();
-
-    var address = document.getElementById("address").value;
-    var postal = document.getElementById("postal").value;
-    var card = document.getElementById("number").value;
-    var cv = document.getElementById("cv").value;
-    localStorage.setItem('address',address);
-    localStorage.setItem('postal',postal);
-    localStorage.setItem('number',card);
-    localStorage.setItem('cv',cv);
-    window.location.href="loading.html";
-}*/
 // disabling and enabling submit button
 const form = document.getElementById('paymentdetails');
 const submitButton = form.querySelector('button');
@@ -102,7 +88,7 @@ form.addEventListener('input', () => {
   submitButton.disabled = !isFormValid;
 });
 // setting text
-document.getElementById("product_image").src = localStorage.getItem("image")
+document.getElementById("product_image").src = localStorage.getItem("image");
 if (localStorage.getItem("product image") == "1"){
     document.getElementById("itemname").textContent = "Seashell Pearl Drop Earrings";
     document.getElementById("cost").textContent = "$35";
