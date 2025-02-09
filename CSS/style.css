@@ -278,6 +278,10 @@ h2{
 .message {
     font-size: 0.8em;
 }
+#signupdata p{
+    font-size: 0.8em;
+    color: red;
+}
 /* about us page */
 .info{
     width: 80%;
