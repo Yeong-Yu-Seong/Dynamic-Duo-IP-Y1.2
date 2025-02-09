@@ -40,7 +40,7 @@ Imagery: High-quality jewelry images curated from Pinterest to enhance the visua
 
 Navigation: Simple categories (Rings, Necklaces, Earrings) and a clear menu layout for seamless browsing.
 
-📌 Wireframes & Mockups: Included in Figma folder.
+📌 Wireframes & Mockups: https://www.figma.com/design/nVBZ1jKOYxIua5lGsCEPMo/IP---Website?m=auto&t=XoFUFvUyixwkmPvx-1
 
 ## Features
  
@@ -54,6 +54,8 @@ High-Quality Product Displays – Clear images and detailed descriptions enhance
 
 Seamless Checkout – A simple step-by-step purchase process.
 
+Purchases System - Allows users to see their purchase history and status of the items.
+
 ### Features Left to Implement
 
 AI-Powered Recommendations – Suggests products based on user preferences.
@@ -63,8 +65,6 @@ Augmented Reality (AR) Try-On – Allows users to virtually try on jewelry befor
 Leaderboard System for Shopping Battles – Tracks top players and rewards consistent winners.
 
 Cart System - Allow users to add items they want to purchase.
-
-Purchases System - Allows users to see their purchase history and status of the items.
 
 Time-limited battles - A gamification system to allow users to get vouchers and benefits.
 
@@ -82,9 +82,11 @@ Time-limited battles - A gamification system to allow users to get vouchers and 
 
 [W3Schools](https://www.w3schools.com/) - Used to get reference for css
 
-[Chaptgpt](https://www.chatgpt.com) - Used to get API codes
+[ChaptGPT](https://www.chatgpt.com) - Used to get API codes
 
 ## Assistive AI
+
+API Implementation: ChatGPT assisted in helping to create javascript codes to get customer data from the database.
 
 Wireframe Adjustments: ChatGPT assisted in refining the structure of the user interface based on best practices.
 
@@ -100,7 +102,11 @@ Checkout Test: Verified that users can complete purchases without errors.
 
 Responsive Design Test: Checked that the app functions smoothly on different devices and screen sizes.
 
-Shopping Battle Test: Evaluated the fairness of the competition, reward distribution, and user engagement levels.
+Creation Of Accounts Test: Ensured that users are able to create multiple accounts and log in on all of them
+
+Account Profile Picture Test: Checked that the user is able to change the profile picture of their account without any issues (For example, re-login resets their profile picture back to the default)
+
+Purchases Test: Ensured that users are able to see all their purchases without any issues (For example, seeing others purchases)
 
 ### Bug Fixes
 
@@ -130,7 +136,7 @@ Product images sourced from Pinterest.
 Fonts inspired by modern retail apps like Zara.
 
 Images sourced from google:
-
+[If images issn't shown, you can check out the links]
 1. Jawad Ali. (n.d.). User icon on transparent background Free PNG. ![User icon on transparent background.](https://www.vecteezy.com/png/19879186-user-icon-on-transparent-background)
 2. pngall. (n.d.). Search Button White PNG. ![White search icon.](https://www.pngall.com/search-button-png/download/112223/#google_vignette)
 3. Fanny Salstein. (2022, June 16). Star icon. Vector yellow isolated five stars. Customer feedback concept. Vector 5 stars rating review. Quality shape design. EPS 10. ![5 Star icon.](https://www.customerparadigm.com/star-icon-vector-yellow-isolated-five-stars-customer-feedback-concept-vector-5-stars-rating-review-quality-shape-design-eps-10/)
@@ -139,8 +145,7 @@ Javascript codes:
 
 1. https://stackoverflow.com/questions/70347614/adding-div-container-with-class-name-and-html-content-with-javascript
 2. https://chatgpt.com/share/67a70de4-c618-800d-bf1d-f86864d5f28c (most of the codes I used for API was from here)
-3. Chatgpt images ![Image 1](AIAssistance\Screenshot 2025-02-07 193026.png) ![Image 2](AIAssistance\Screenshot 2025-02-07 193038.png)
-
+3. Chatgpt images (Find in AIAssistance Folder)
 #### Game Mechanics Inspiration
 
 [**Yet to be implemented**]
