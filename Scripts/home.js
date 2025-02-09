@@ -13,11 +13,11 @@ document.getElementById("accountpic").src = localStorage.getItem("accountpicture
 document.querySelectorAll('.product_image').forEach(img => {
     img.addEventListener('mouseover', function() {
         console.log(this.src);
-        localStorage.setItem("image",this.src)
+        localStorage.setItem("image",this.src);
     });
 });
 function getId(element) {
     console.log('Hovered ID:', element.id);
-    localStorage.setItem("product image", element.id)
+    localStorage.setItem("product image", element.id);
 }
-document.getElementById("accountpic").src = localStorage.getItem("accountpicture")
+document.getElementById("accountpic").src = localStorage.getItem("accountpicture");

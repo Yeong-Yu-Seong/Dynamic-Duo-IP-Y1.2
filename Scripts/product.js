@@ -11,7 +11,7 @@ function videolink(){
 //setting images and texts based on item clicked
 document.getElementById('product_image').src = localStorage.getItem('image');
 document.getElementById('product_image2').src = localStorage.getItem('image');
-document.getElementById("product_image3").src = localStorage.getItem('image')
+document.getElementById("product_image3").src = localStorage.getItem('image');
 if (localStorage.getItem("product image") == "1"){
     document.getElementById("productname").textContent = "Seashell Pearl Drop Earrings";
     document.getElementById("desc").textContent = "The Seashell Pearl Drop Earrings are perfect for anyone who loves the beach. They feature a beautiful cowrie shell hanging from a small gold seashell stud, giving them a natural and elegant look. A tiny pearl bead adds a simple, classy touch. These earrings are great for a relaxed summer outfit or a stylish everyday look, bringing a little bit of the ocean with you wherever you go! 🌊✨";

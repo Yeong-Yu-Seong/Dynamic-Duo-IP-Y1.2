@@ -1,8 +1,8 @@
 //setting account details
-document.getElementById('user_name').textContent = localStorage.getItem('username')
-document.getElementById('account_name').textContent = localStorage.getItem('name')
-document.getElementById('account_email').textContent = localStorage.getItem('email')
-document.getElementById('profile_picture').src = localStorage.getItem('accountpicture')
+document.getElementById('user_name').textContent = localStorage.getItem('username');
+document.getElementById('account_name').textContent = localStorage.getItem('name');
+document.getElementById('account_email').textContent = localStorage.getItem('email');
+document.getElementById('profile_picture').src = localStorage.getItem('accountpicture');
 
 // Logout function to clear localStorage and redirect to login page
 function logout() {
