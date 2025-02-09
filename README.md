@@ -1,7 +1,7 @@
 # Ocean's Gold
 [GitHub Page](https://github.com/Yeong-Yu-Seong/Dynamic-Duo-IP-Y1.2)
 
-Ocean’s Gold is a luxurious e-commerce platform designed for jewelry enthusiasts. Inspired by the elegance of gold and the beauty of the ocean, this app provides a seamless, elegant, and visually appealing shopping experience for customers looking for high-quality, timeless jewelry pieces. The app combines aesthetic beauty with functionality, ensuring an intuitive browsing and purchasing experience for users.
+Ocean's Gold is a luxurious e-commerce platform designed for jewelry enthusiasts. Inspired by the elegance of gold and the beauty of the ocean, this app provides a seamless, elegant, and visually appealing shopping experience for customers looking for high-quality, timeless jewelry pieces. The app combines aesthetic beauty with functionality, ensuring an intuitive browsing and purchasing experience for users.
 
 Additionally, the app wants to incorporate Time-Limited Shopping Battles, an engaging gamification feature where users compete in real-time to claim exclusive discounts and rewards, making shopping more interactive and exciting.
 
@@ -10,7 +10,7 @@ Additionally, the app wants to incorporate Time-Limited Shopping Battles, an eng
  
 ### Target Users
 
-Ocean’s Gold is designed for jewelry lovers, fashion enthusiasts, luxury shoppers, and competitive shoppers who seek a premium shopping experience. Users want a smooth, high-end interface that reflects the sophistication of the jewelry they are purchasing while also enjoying interactive shopping experiences.
+Ocean's Gold is designed for jewelry lovers, fashion enthusiasts, luxury shoppers, and competitive shoppers who seek a premium shopping experience. Users want a smooth, high-end interface that reflects the sophistication of the jewelry they are purchasing while also enjoying interactive shopping experiences.
 
 ### User Stories
 
@@ -46,23 +46,27 @@ Navigation: Simple categories (Rings, Necklaces, Earrings) and a clear menu layo
  
 ### Existing Features
 
-Luxury-Themed UI – Ensures an elegant and intuitive shopping experience.
+Luxury-Themed UI - Ensures an elegant and intuitive shopping experience.
 
-Easy Navigation – Categories and menus help users find items quickly.
+Easy Navigation - Categories and menus help users find items quickly.
 
-High-Quality Product Displays – Clear images and detailed descriptions enhance the buying process.
+High-Quality Product Displays - Clear images and detailed descriptions enhance the buying process.
 
-Seamless Checkout – A simple step-by-step purchase process.
+Seamless Checkout - A simple step-by-step purchase process.
 
 Purchases System - Allows users to see their purchase history and status of the items.
 
 ### Features Left to Implement
 
-AI-Powered Recommendations – Suggests products based on user preferences.
+Comment Feature - Allows users to comment on products
 
-Augmented Reality (AR) Try-On – Allows users to virtually try on jewelry before purchasing.
+Search Feature - Allows users to search for items
 
-Leaderboard System for Shopping Battles – Tracks top players and rewards consistent winners.
+AI-Powered Recommendations - Suggests products based on user preferences.
+
+Augmented Reality (AR) Try-On - Allows users to virtually try on jewelry before purchasing.
+
+Leaderboard System for Shopping Battles - Tracks top players and rewards consistent winners.
 
 Cart System - Allow users to add items they want to purchase.
 
@@ -74,9 +78,9 @@ Time-limited battles - A gamification system to allow users to get vouchers and 
 
 [removebg](https://www.remove.bg/upload) - Used to remove background of images.
 
-[Figma](https://www.figma.com) – Used to create wireframes and mockups.
+[Figma](https://www.figma.com) - Used to create wireframes and mockups.
 
-[Pinterest](https://www.pinterest.com/) – Used to source aesthetic inspiration for the product display images.
+[Pinterest](https://www.pinterest.com/) - Used to source aesthetic inspiration for the product display images.
 
 [Stackoverflow](https://stackoverflow.com/questions) - Used to get javascript codes
 
@@ -136,6 +140,7 @@ Product images sourced from Pinterest.
 Fonts inspired by modern retail apps like Zara.
 
 Images sourced from google:
+
 [If images issn't shown, you can check out the links]
 1. Jawad Ali. (n.d.). User icon on transparent background Free PNG. ![User icon on transparent background.](https://www.vecteezy.com/png/19879186-user-icon-on-transparent-background)
 2. pngall. (n.d.). Search Button White PNG. ![White search icon.](https://www.pngall.com/search-button-png/download/112223/#google_vignette)
@@ -148,13 +153,13 @@ Javascript codes:
 3. Chatgpt images (Find in AIAssistance Folder)
 #### Game Mechanics Inspiration
 
-[**Yet to be implemented**]
+[**Have not implement**]
 
-Live Shopping Competitions – Inspired by real-time gaming experiences.
+Live Shopping Competitions - Inspired by real-time gaming experiences.
 
-Leaderboards and Badges – Adapted from platforms like Strava, encouraging continuous engagement.
+Leaderboards and Badges - Adapted from platforms like Strava, encouraging continuous engagement.
 
-Mystery Rewards – Borrowed from mobile games like Candy Crush, adding fun surprises.
+Mystery Rewards - Borrowed from mobile games like Candy Crush, adding fun surprises.
 
 ### Acknowledgements
 
@@ -162,4 +167,4 @@ This project was inspired by a passion for luxury jewelry and elegant e-commerce
 
 ## Conclusion
 
-Ocean’s Gold blends elegance, simplicity, and high-end shopping features to create a sophisticated jewelry shopping experience. With the addition of Time-Limited Shopping Battles, users can enjoy an interactive and competitive shopping experience that enhances engagement and rewards customers in a fun and unique way.
+Ocean's Gold blends elegance, simplicity, and high-end shopping features to create a sophisticated jewelry shopping experience. With the addition of Time-Limited Shopping Battles, users can enjoy an interactive and competitive shopping experience that enhances engagement and rewards customers in a fun and unique way.
